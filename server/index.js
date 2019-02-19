@@ -13,5 +13,9 @@ app.get('/wow', (req,res) => {
     return res.json({success: true, message: "WOW!", exit:0});
 });
 
+app.get('/api/wow', (req,res) => {
+    return res.json({success: true, message: "WOW!", exit:0});
+});
+
 const PORT = process.env.PORT | 5000;
 app.listen(PORT);

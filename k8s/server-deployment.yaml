@@ -17,3 +17,9 @@ spec:
           image: louismbuyu17/wow-server
           ports:
             - containerPort: 5000
+          env:
+            - name: MONGODBURI
+              valueFrom:
+                secretKeyRef:
+                  name: mongodburi
+                  key: MONGODBURI
